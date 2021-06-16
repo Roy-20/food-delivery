@@ -1,0 +1,196 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/*{
+    margin: 0;
+    padding: 0;
+} */
+#logo{
+    margin: 0px 12px;
+}
+#logo img{
+    height: 49px;
+    margin: 4px 12px;
+}
+
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0;
+    position: sticky;
+}
+#navbar::before{
+    background-color: black;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    padding: 2px 23px;
+    display: block;
+    color: white;
+    padding-bottom: 8px ;
+    text-decoration: none;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(158, 139, 139);
+    text-decoration: underline;
+    border: 2px solid rgb(158, 119, 119);
+    border-radius: 4px;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 390px;
+    padding: 3px 200px;
+    /* position: relative; */
+}
+#home::before{
+    background: url('Home.jpg')no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 474px;
+    z-index: -1;
+    opacity: 0.8;
+    width: 100%;
+}
+#home p{
+    font-size: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 2px 94px;
+}
+.btn{
+    background-color: brown;
+    border: 2px solid gainsboro;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: 200;
+}
+.btn:hover{
+    background-color: rgb(224, 165, 165);
+}
+
+#services{
+    margin: 12px;
+    display: flex;
+}
+.box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 13px;
+    border-radius: 27px;
+    margin-bottom: 20px;
+    background-color: rgb(235, 202, 160);
+}
+.box img{
+    height: 200px;
+    margin: auto;
+    display: block;    
+}
+
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 1px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px ;
+}
+
+.center{
+    text-align: center;
+}
+.box p{
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#client-section{
+    height: 344px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    width: 99%;
+    height: 54%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url('vegetables.png') no-repeat center center/cover
+}
+#clients img{
+    height: 144px;
+}
+.class-item{
+    padding: 3px 44px;
+}
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('contact-us.jpg');
+}
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin: 3px;
+    padding: 5px 20px;
+}
