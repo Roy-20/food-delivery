@@ -3,32 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moving Car</title>
+    <title>Best Online Food || MyFood.com</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" media="screen and (max-width:1150px)" href="phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Bree+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="sky">
-            <div class="trees"></div>
-            <div class="track"></div>
-            <div class="car">
-                <div class="wheel wheel1">
-                    <img src="car_wheel_left.png" alt="">
-                </div>
-                <div class="wheel wheel2">
-                    <img src="car_wheel_right.png" alt="">
-                </div>
-            </div>
-            <!-- <div class="bike">
-                <div class="wheel wheel3">
-                    <img src="car_wheel_left.png" alt="">
-                </div>
-                <div class="wheel wheel4">
-                    <img src="car_wheel_right.png" alt="">
-                </div>
-            </div> -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="MyFood">
         </div>
-    </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#service-container">Our Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Sign in</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <h1 class="h-primary">Welcome to MyFood</h1>
+        <p>Now,You can get yummy and delicious food at your door-step With a best price. So? What are you waiting for?Order now and enjoy your food.!!</p>
+        <button class="btn">Order now</button>
+    </section>
+    <section id="service-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="pizza.jpg" alt="">
+                <h2 class="h-secondary center">Cheesy Pizza</h2>
+                <p class="center">Want best Cheesy pizza?So, you came absolutely to the right food center. Here we maintain the complete hygiene and then serve you the best and hot pizza which can make your day amazing!! </p>
+            </div>
+            <div class="box">
+                <img src="cake.jpg" alt="">
+                <h2 class="h-secondary center">Delicious Desert</h2>
+                <p class="center">Here,you can get more yummy deserts at a very low price. We serve pestries ,cakes as per as sweets also.</p>
+            </div>
+            <div class="box">
+                <img src="pizza delivery.png" alt="">
+                <h2 class="h-secondary center">Fast Delivery</h2>
+                <p class="center">You don't have to wait for an hour even.We will deliver your food within 30minutes. Don't worry about safety!Our delivery agent will maintain a safe distance and u can pick your order safely.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="class-item">
+                <img src="apple.png" alt="our clients">
+            </div>
+            <div class="class-item">
+                <img src="microsoft.png" alt="our clients">
+            </div>
+            <div class="class-item">
+                <img src="logo (2).png" alt="our clients">
+            </div>
+            <div class="class-item">
+                <img src="cart.png" alt="our clients">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Sign in Now</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text"name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email:</label>
+                    <input type="email"name="name" id="name" placeholder="Enter your email-id">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone No:</label>
+                    <input type="phone no"name="name" id="name" placeholder="Enter your Phone No">
+                </div>
+                <div class="form-group">
+                    <label for="name">Password:</label>
+                    <input type="password"name="name" id="name" placeholder="Enter your password">
+                </div>
+                <div class="form-group">
+                    <label for="name">Give a message:</label>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Type Your Message"></textarea>
+                </div>
+            </form>
+            <button class="btn">sign in</button>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy; www.MyFood.com. All rights are reserved|
+        </div>
+    </footer>
 </body>
 </html>
